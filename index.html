@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | NFT preview card component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <body>
+    <main class="container">
+      <img src="images/image-equilibrium.jpg" alt="" />
+      <h3>&nbsp; Equilibrium #3429</h3>
+      <p>&nbsp;Our Equilibrium collection promotes &nbsp;balance and calm.</p>
+      <div class="box">
+        <span id="currency-name">
+          <img src="images/icon-ethereum.svg" alt="icon" /> 0.041 ETH</span
+        >
+        <span class="days">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+            />
+          </svg>
+          <span>3 days left</span>
+        </span>
+      </div>
+      <hr />
+      <p class="last-para">
+        <img src="images/image-avatar.png" alt="" />&nbsp;&nbsp;&nbsp; Creation
+        of
+        <span id="change-color">Jules Wyvern</span>
+      </p>
+    </main>
+  </body>
 </html>
